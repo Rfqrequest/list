@@ -22,9 +22,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 # Copy backend PHP scripts (important!)
 COPY submit.php download.php ./
 
-# Copy files folder
-COPY files/ ./files/
-
 # Copy the frontend
 COPY public/ ./public/
 
